@@ -1,3 +1,65 @@
-p {
-    color: red;
+/* Form */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.question-form {
+    width: 481px;
+    height: 392px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 31px;
+    border-radius: 12px;
+    background-color: #F7F5F9;
+    box-shadow: 5px 5px 15px rgb(177, 176, 176);
+    box-sizing: border-box;
+}
+
+.question-form__elements {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.question-form__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3B3D43;
+}
+
+.question-form__input {
+    width: 401px;
+    height: 48px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 0px;
+}
+
+.question-form__input::placeholder {
+    color: #D0C9D6;
+    font-family: 'Roboto';
+    font-weight: 380;
+}
+
+.question-form__input:focus {
+    outline: none;
+    border: 1px solid #854FC8;
+}
+
+.question-form__input.submit-button {
+    font-size: 17px;
+    font-family: 'Roboto';
+    font-weight: 380;
+    line-height: 22px;
+    padding: auto 13px auto 13px;
+    background-color: #6979F8;
+    color: #FFFFFF;
 }
