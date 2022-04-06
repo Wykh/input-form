@@ -1,6 +1,7 @@
-/* Form */
+/* Fonts import */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
+/* Form */
 body {
     font-family: 'Roboto';
     font-style: normal;
@@ -17,11 +18,7 @@ body {
     background-color: #F7F5F9;
     box-shadow: 5px 5px 15px rgb(177, 176, 176);
     box-sizing: border-box;
-}
-
-.question-form__elements {
-    padding-left: 40px;
-    padding-top: 40px;
+    padding: 40px;
 }
 
 .question-form__title {
