@@ -40,6 +40,10 @@ body {
     border: 0px;
 }
 
+.question-form__input:hover {
+    border: 1px solid #854FC8;
+}
+
 .question-form__input::placeholder {
     color: #D0C9D6;
     font-family: 'Roboto';
@@ -60,3 +64,14 @@ body {
     background-color: #6979F8;
     color: #FFFFFF;
 }
+
+.question-form__input.submit-button:hover {
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+    50% {background-color: #4b5de2;}
+  }
