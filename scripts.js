@@ -2,9 +2,9 @@ $(document).ready(function () {
 
     $('form').on('submit', function () {
 
-        let name = $('form input[name=name]');
-        let phone = $('form input[name=phone]');
-        let email = $('form input[name=email]');
+        const name = $('form input[name=name]');
+        const phone = $('form input[name=phone]');
+        const email = $('form input[name=email]');
 
         // JS validation
         const regexRuName = /^[А-Яа-я-ёЁ ]+$/;
@@ -21,7 +21,7 @@ $(document).ready(function () {
             alert('WTF! Invalid email format');
         }
         else {
-            let data = {
+            const data = {
                 name: name.val(),
                 phone: phone.val(),
                 email: email.val()
@@ -30,7 +30,7 @@ $(document).ready(function () {
             $.ajax({
                 type: 'POST',
                 url: 'https://60376bfd5435040017722533.mockapi.io/form',
-                data: data,
+                data,
                 success: function (data, status, xhr) {
                     alert(`Succes! \nMessage: "${data.text}". \nStatus ${xhr.status}`);
                     name.val('');
